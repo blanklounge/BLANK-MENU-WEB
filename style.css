@@ -14,6 +14,7 @@ h1,h2 {
   font-style: normal;
   font-variation-settings:
     "wdth" 75;
+    margin: 0;
  
 }
 h1 {
@@ -29,6 +30,7 @@ h3 {
   font-style: normal;
   font-variation-settings: 
     "wdth" 75;
+    margin: 0;
     
 }
 
@@ -38,6 +40,7 @@ h4 {  font-family: "Bricolage Grotesque", sans-serif;
   font-style: normal;
   font-variation-settings:
     "wdth" 87.5;
+  margin: 0;
 }
 
 .menu-body {
@@ -53,7 +56,7 @@ h4 {  font-family: "Bricolage Grotesque", sans-serif;
   font-style: normal;
   font-variation-settings:
     "wdth" 75;
-  font-size: 2em;
+  font-size: 1.25rem;
 }
 
 
@@ -65,14 +68,14 @@ h4 {  font-family: "Bricolage Grotesque", sans-serif;
   padding: 28px;
 }
 
-/* .header > * {
-  display: inline-block;
-} */
+.header > * {
+  flex-grow: 1; 
+}
 
 .back-btn  {
   
     color: #ffffff; /* Text color */
-    padding: 10px 20px; /* Padding */
+    padding: 10px 0px; /* Padding */
     border-radius: 5px; /* Border radius */
     text-decoration: none; /* Remove default underline */
     transition: background-color 0.3s ease; /* Transition effect for background color */
@@ -80,18 +83,28 @@ h4 {  font-family: "Bricolage Grotesque", sans-serif;
 
 .svg-icon {
   position: relative;
-    width: 20px; /* Width of the SVG */
-    height: 20px; /* Height of the SVG */
-    fill: #000000; /* Color of the SVG icon */
-    margin-right: 5px; /* Margin to separate the SVG from text */
+  width: 20px; /* Width of the SVG */
+  height: 20px; /* Height of the SVG */
+  fill: #000000; /* Color of the SVG icon */
   }
 
+
   .menu-title {
- 
+    padding: 0px 10px 0px 10px;
     text-align: center;
     text-transform: uppercase;
   }
 
   .language-switcher {
     text-align: right;
+  }
+
+  .language-switcher > * {
+    padding: 0px 0px 0px 4px;
+  }
+
+
+  .menu-des {
+    padding: 0% 10% 10% 10%;
+    text-align: center;
   }
