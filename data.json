@@ -1,0 +1,57 @@
+{
+    "Classic Coffee": [
+      {
+        "name": "Espresso",
+        "price": 175,
+        "description": ""
+      },
+      {
+        "name": "Espresso",
+        "price": 175,
+        "description": ""
+      },
+      {
+        "name": "Espresso",
+        "price": 175,
+        "description": ""
+      },
+      {
+        "name": "Espresso",
+        "price": 175,
+        "description": ""
+      },
+      {
+        "name": "Espresso",
+        "price": 175,
+        "description": ""
+      }
+    ],
+    "Signature Coffee": [
+      {
+        "name": "Tamarind cold brew",
+        "price": 185,
+        "description": ""
+      },
+      {
+        "name": "Tamarind cold brew",
+        "price": 185,
+        "description": ""
+      },
+      {
+        "name": "Tamarind cold brew",
+        "price": 185,
+        "description": ""
+      },
+      {
+        "name": "Tamarind cold brew",
+        "price": 185,
+        "description": ""
+      },
+      {
+        "name": "Tamarind cold brew",
+        "price": 185,
+        "description": ""
+      }
+    ]
+  }
+  

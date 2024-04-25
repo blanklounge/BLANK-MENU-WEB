@@ -1,8 +1,97 @@
 html, body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(to bottom, #80B9E2, #D2D3CE, #EDD181, #F29B61, #EF514B);
+  background-repeat: no-repeat;
 }
 
-canvas {
-  display: block;
+
+
+h1,h2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 75;
+ 
 }
+h1 {
+  font-size:  3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 { 
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 
+    "wdth" 75;
+    
+}
+
+h4 {  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 87.5;
+}
+
+.menu-body {
+    font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.menu-button {
+   font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 75;
+  font-size: 2em;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 28px;
+}
+
+/* .header > * {
+  display: inline-block;
+} */
+
+.back-btn  {
+  
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    text-decoration: none; /* Remove default underline */
+    transition: background-color 0.3s ease; /* Transition effect for background color */
+  }
+
+.svg-icon {
+  position: relative;
+    width: 20px; /* Width of the SVG */
+    height: 20px; /* Height of the SVG */
+    fill: #000000; /* Color of the SVG icon */
+    margin-right: 5px; /* Margin to separate the SVG from text */
+  }
+
+  .menu-title {
+ 
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .language-switcher {
+    text-align: right;
+  }
