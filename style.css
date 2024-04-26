@@ -21,9 +21,9 @@ h1 {
   font-size:  3rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
-h3 { 
+h3, .type-item { 
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -31,6 +31,7 @@ h3 {
   font-variation-settings: 
     "wdth" 75;
     margin: 0;
+  font-size: 1.5rem;
     
 }
 
@@ -41,6 +42,13 @@ h4 {  font-family: "Bricolage Grotesque", sans-serif;
   font-variation-settings:
     "wdth" 87.5;
   margin: 0;
+}
+
+p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 .menu-body {
@@ -107,4 +115,87 @@ h4 {  font-family: "Bricolage Grotesque", sans-serif;
   .menu-des {
     padding: 0% 10% 10% 10%;
     text-align: center;
+  }
+
+
+  .type-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* First column is 3 times bigger than the second column */
+    grid-template-rows: repeat(9, 0.5fr); /* 9 rows */
+    grid-auto-rows: auto;
+    gap: 10px; /* Gap between grid items */
+    padding: 0 8%; /* Padding of 10% screen width */
+  }
+  
+  .type-header  {
+    grid-column: 1 / span 2; /* Header spans across both columns */
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  
+  .type-item {
+
+  }
+
+  .name {
+    grid-column: 1;
+  }
+  
+  .price {
+    grid-column: 2;
+    text-align: right;
+  }
+
+  .lightbox {
+    display:none;
+  }
+
+  .lightbox-content {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 500px;
+    background-color: #fff; /* Set background color of the lightbox */
+    z-index: 999; /* Ensure lightbox appears above other content */
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 998; /* Set z-index lower than the lightbox to ensure it's behind */
+  }
+
+
+  .content-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* First column is 3 times bigger than the second column */
+    grid-template-rows: repeat(2, 0.5fr); /* 9 rows */
+    grid-auto-rows: auto;
+    gap: 10px; /* Gap between grid items */
+    padding: 0 8%; /* Padding of 10% screen width */
+  }
+  
+  .lightbox-description  {
+     /* Header spans across both columns */
+    text-align: left;
+    padding-bottom: 15px;
+  }
+
+  .lightbox-name {
+    grid-column: 1;
+  }
+  
+  .lightbox-price {
+    grid-column: 2;
+    text-align: right;
   }

@@ -3,54 +3,95 @@
       {
         "name": "Espresso",
         "price": 175,
-        "description": ""
+        "description": "Cà phê arabica, nước xoài, sốt caramen gừng, rau răm, muối tôm",
+        "eng": "Espresso",
+        "img": ""
       },
       {
-        "name": "Espresso",
-        "price": 175,
-        "description": ""
+        "name": "Americano",
+        "price": 180,
+        "description": "",
+        "eng": "Americano",
+        "img": ""
       },
       {
-        "name": "Espresso",
-        "price": 175,
-        "description": ""
+        "name": "Latte",
+        "price": 180,
+        "description": "",
+        "eng": "",
+        "img": ""
       },
       {
-        "name": "Espresso",
-        "price": 175,
-        "description": ""
+        "name": "Cappuccino",
+        "price": 180,
+        "description": "",
+        "eng": "Cappuccino",
+        "img": ""
       },
       {
-        "name": "Espresso",
+        "name": "Oatside Latte",
+        "price": 190,
+        "description": "",
+        "eng": "Oatside Latte",
+        "img": ""
+      },
+      {
+        "name": "Original Cold Brew",
         "price": 175,
-        "description": ""
+        "description": "",
+        "eng": "Original Cold Brew",
+        "img": ""
+      },
+      {
+        "name": "Cà Phê Đen",
+        "price": 175,
+        "description": "",
+        "eng": "Cà Phê Đen",
+        "img": ""
+      },
+      {
+        "name": "Cà Phê Sữa",
+        "price": 180,
+        "description": "",
+        "eng": "Cà Phê Đen",
+        "img": ""
       }
     ],
     "Signature Coffee": [
       {
         "name": "Tamarind cold brew",
         "price": 185,
-        "description": ""
+        "description": "",
+        "eng": "",
+        "img": ""
       },
       {
         "name": "Tamarind cold brew",
         "price": 185,
-        "description": ""
+        "description": "",
+        "eng": "",
+        "img": ""
       },
       {
         "name": "Tamarind cold brew",
         "price": 185,
-        "description": ""
+        "description": "",
+        "eng": "",
+        "img": ""
       },
       {
         "name": "Tamarind cold brew",
         "price": 185,
-        "description": ""
+        "description": "",
+        "eng": "",
+        "img": ""
       },
       {
         "name": "Tamarind cold brew",
         "price": 185,
-        "description": ""
+        "description": "",
+        "eng": "",
+        "img": ""
       }
     ]
   }
