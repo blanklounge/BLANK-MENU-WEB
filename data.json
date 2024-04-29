@@ -5,7 +5,7 @@
         "price": 175,
         "description": "Cà phê arabica, nước xoài, sốt caramen gừng, rau răm, muối tôm",
         "eng": "Espresso",
-        "img": ""
+        "img": "assets/EGG COFFEE MARTINI.jpg"
       },
       {
         "name": "Americano",
@@ -63,35 +63,35 @@
         "price": 185,
         "description": "",
         "eng": "",
-        "img": ""
+        "img": "assets/EGG COFFEE MARTINI.jpg"
       },
       {
         "name": "Tamarind cold brew",
         "price": 185,
         "description": "",
         "eng": "",
-        "img": ""
+        "img": "assets/EGG COFFEE MARTINI.jpg"
       },
       {
         "name": "Tamarind cold brew",
         "price": 185,
         "description": "",
         "eng": "",
-        "img": ""
+        "img": "assets/EGG COFFEE MARTINI.jpg"
       },
       {
         "name": "Tamarind cold brew",
         "price": 185,
         "description": "",
         "eng": "",
-        "img": ""
+        "img": "assets/EGG COFFEE MARTINI.jpg"
       },
       {
         "name": "Tamarind cold brew",
         "price": 185,
         "description": "",
         "eng": "",
-        "img": ""
+        "img": "assets/EGG COFFEE MARTINI.jpg"
       }
     ]
   }

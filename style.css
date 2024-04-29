@@ -5,8 +5,6 @@ html, body {
   background-repeat: no-repeat;
 }
 
-
-
 h1,h2 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
@@ -31,7 +29,7 @@ h3, .type-item {
   font-variation-settings: 
     "wdth" 75;
     margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
     
 }
 
@@ -48,7 +46,7 @@ p {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .menu-body {
@@ -147,19 +145,23 @@ p {
     text-align: right;
   }
 
+
+
   .lightbox {
     display:none;
+ 
   }
 
   .lightbox-content {
     display: block;
+    background-image: none;
+    background-size: cover; 
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80vw;
-    height: 500px;
-    background-color: #fff; /* Set background color of the lightbox */
+    height: 50vh;
     z-index: 999; /* Ensure lightbox appears above other content */
     border-radius: 20px;
     padding: 20px;
@@ -176,13 +178,14 @@ p {
   }
 
 
-  .content-container {
+  .text-content {
     display: grid;
     grid-template-columns: 3fr 1fr; /* First column is 3 times bigger than the second column */
     grid-template-rows: repeat(2, 0.5fr); /* 9 rows */
     grid-auto-rows: auto;
     gap: 10px; /* Gap between grid items */
     padding: 0 8%; /* Padding of 10% screen width */
+    color: #fff;
   }
   
   .lightbox-description  {
@@ -199,3 +202,7 @@ p {
     grid-column: 2;
     text-align: right;
   }
+
+  /* .lb-container {
+    display: flex;
+  } */

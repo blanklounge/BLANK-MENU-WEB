@@ -1,7 +1,7 @@
 async function getData() {
   const response = await fetch('./data.json');
   const data = await response.json();
-  console.log(data);
+  console.log("got Data!");
 
 
   for(let i=0; i<Object.keys(data).length ; i++) {
@@ -33,15 +33,20 @@ for(let i=0; i<Object.keys(data).length ; i++) {
 console.log(allItems);
 
 // Function to populate the lightbox content based on the clicked item data
+const lightbox = document.querySelector('.lightbox')
+
 function populateLightboxContent(itemData) {
-  const lbContent = document.querySelector('.content-container');
+  const textContent = document.querySelector('.text-content');
+  const lbContent = document.querySelector('.lightbox-content');
 
-
-  lbContent.innerHTML = `
+  textContent.innerHTML = `
     <h3 class="lightbox-name">${itemData.name}</h3>
     <h3 class="lightbox-price">${itemData.price}</h3>
     <p class="lightbox-description">${itemData.description}</p>
   `;
+
+  lbContent.style.backgroundImage = `url("${itemData.img}")`;
+
 }
 
 gridItems.forEach(gridItem => {
@@ -49,14 +54,11 @@ gridItems.forEach(gridItem => {
     const itemName = gridItem.textContent; // Get the ID of the clicked item
 
         const clickedItemData = allItems.find(item => item.name == itemName);
-        // // Populate the lightbox content with the clicked item data
         populateLightboxContent(clickedItemData);
-        // // Show the lightbox
         lightbox.style.display = 'block';
       })
   });
 
-const lightbox = document.querySelector('.lightbox')
 lightbox.addEventListener('click', function(event) {
     if (event.target.classList.contains('lightbox-overlay') || event.target.classList.contains('close-btn')) {
       lightbox.style.display = 'none';
