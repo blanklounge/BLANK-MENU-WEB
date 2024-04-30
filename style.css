@@ -118,11 +118,11 @@ p {
 
   .type-container {
     display: grid;
-    grid-template-columns: 3fr 1fr; /* First column is 3 times bigger than the second column */
-    grid-template-rows: repeat(9, 0.5fr); /* 9 rows */
+    grid-template-columns: 3fr 1fr; 
+    grid-template-rows: repeat(9, 0.5fr); 
     grid-auto-rows: auto;
-    gap: 10px; /* Gap between grid items */
-    padding: 0 8%; /* Padding of 10% screen width */
+    gap: 10px; 
+    padding: 0 8%; 
   }
   
   .type-header  {

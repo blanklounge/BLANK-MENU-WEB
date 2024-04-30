@@ -1,7 +1,8 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #80B9E2, #D2D3CE, #EDD181, #F29B61, #EF514B);
+  background: linear-gradient(to bottom, #80b9e2, #d2d3ce, #edd181, #f29b61, #ef514b);
   background-repeat: no-repeat;
 }
 
@@ -25,7 +26,8 @@ h2 {
   font-size: 2.5rem;
 }
 
-h3, .type-item {
+h3,
+.type-item {
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -74,37 +76,31 @@ p {
   gap: 16px;
   padding: 28px;
 }
-
-.header > * {
+.header .header > * {
   flex-grow: 1;
 }
-
-.back-btn {
+.header .back-btn {
   color: #ffffff; /* Text color */
   padding: 10px 0px; /* Padding */
   border-radius: 5px; /* Border radius */
   text-decoration: none; /* Remove default underline */
   transition: background-color 0.3s ease; /* Transition effect for background color */
 }
-
-.svg-icon {
+.header .back-btn .svg-icon {
   position: relative;
   width: 20px; /* Width of the SVG */
   height: 20px; /* Height of the SVG */
   fill: #000000; /* Color of the SVG icon */
 }
-
-.menu-title {
+.header .menu-title {
   padding: 0px 10px 0px 10px;
   text-align: center;
   text-transform: uppercase;
 }
-
-.language-switcher {
+.header .language-switcher {
   text-align: right;
 }
-
-.language-switcher > * {
+.header .language-switcher > * {
   padding: 0px 0px 0px 4px;
 }
 
@@ -116,45 +112,63 @@ p {
 .type-container {
   display: grid;
   grid-template-columns: 3fr 1fr; /* First column is 3 times bigger than the second column */
-  grid-template-rows: repeat(9, 0.5fr); /* 9 rows */
+  grid-auto-rows: 0.5fr; /* 9 rows */
   grid-auto-rows: auto;
   gap: 10px; /* Gap between grid items */
   padding: 0 8%; /* Padding of 10% screen width */
+  margin: 40px 0;
 }
-
-.type-header {
+.type-container .type-header {
   grid-column: 1/span 2; /* Header spans across both columns */
   text-align: center;
   text-transform: uppercase;
   padding: 20px 0;
 }
-
-.name {
+.type-container .name {
   grid-column: 1;
 }
-
-.price {
+.type-container .price {
   grid-column: 2;
   text-align: right;
 }
 
-.lightbox {
-  display: none;
+.lb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20vh;
 }
-
-.lightbox-content {
-  display: block;
+.lb-container .lightbox {
+  display: none;
   background-image: none;
   background-size: cover;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 80vw;
   height: 50vh;
   z-index: 999; /* Ensure lightbox appears above other content */
   border-radius: 20px;
-  padding: 20px;
+  padding: 20px 0px;
+  margin: 10px 0;
+}
+.lb-container .lightbox .textContent {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* First column is 3 times bigger than the second column */
+  grid-template-rows: repeat(2, 0.5fr); /* 9 rows */
+  grid-auto-rows: auto;
+  gap: 10px; /* Gap between grid items */
+  padding: 0 8%; /* Padding of 10% screen width */
+  color: #fff;
+}
+.lb-container .lightbox .textContent .lightbox-name {
+  grid-column: 1;
+}
+.lb-container .lightbox .textContent .lightbox-price {
+  grid-column: 2;
+  text-align: right;
+}
+.lb-container .lightbox .textContent .lightbox-description {
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .lightbox-overlay {
@@ -165,29 +179,4 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
   z-index: 998; /* Set z-index lower than the lightbox to ensure it's behind */
-}
-
-.text-content {
-  display: grid;
-  grid-template-columns: 3fr 1fr; /* First column is 3 times bigger than the second column */
-  grid-template-rows: repeat(2, 0.5fr); /* 9 rows */
-  grid-auto-rows: auto;
-  gap: 10px; /* Gap between grid items */
-  padding: 0 8%; /* Padding of 10% screen width */
-  color: #fff;
-}
-
-.lightbox-description {
-  /* Header spans across both columns */
-  text-align: left;
-  padding-bottom: 15px;
-}
-
-.lightbox-name {
-  grid-column: 1;
-}
-
-.lightbox-price {
-  grid-column: 2;
-  text-align: right;
 }/*# sourceMappingURL=menu-style.css.map */

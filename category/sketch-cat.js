@@ -1,10 +1,24 @@
+var typeName = document.querySelector('.menu-title').innerHTML;
+
+
+var languagePreference = getLanguagePreference();
+var namelanguage = 'viname';
+var deslanguage = 'viname';
+
+if (languagePreference == 'en') {
+  namelanguage = 'enname'
+  deslanguage = 'endescription';
+} else {
+  namelanguage = 'viname'
+  deslanguage = 'videscription';
+};
+
+
+
 async function getData() {
   const response = await fetch('../data.json');
   const data = await response.json();
-  console.log("got Data!");
-
-  var typeName = 'Signature Coffee';
-
+  
   var catItems = data[typeName];
 
     var typeList = document.getElementById('type1List');
@@ -12,7 +26,7 @@ async function getData() {
     data[typeName].forEach(item => {
       const divName = document.createElement('div');
       divName.classList.add('type-item', 'name');
-      divName.textContent = item.name;
+      divName.textContent = item[namelanguage];
 
       const divPrice= document.createElement('div');
       divPrice.classList.add('type-item', 'price');
@@ -22,46 +36,73 @@ async function getData() {
     })
 
 //Create lightboxes for objects that has images
-
 const itemsWithImage = catItems.filter(object => object.img);
-console.log(itemsWithImage);
 
-const container = document.querySelector('.lb-container')
+const lightboxes = document.querySelectorAll('.lightbox');
 
+for (var i=0; i < itemsWithImage.length; i++)  {
+  const lightbox = lightboxes[i];
+  const textContents = document.querySelectorAll('.textContent');
+  const textContent = textContents[i];
 
-itemsWithImage.forEach(item => {
-  const lightbox = document.createElement('div');
-  lightbox.classList.add('lightbox');
-  container.appendChild(lightbox);
+  textContent.innerHTML = `
+    <h3 class="lightbox-name">${itemsWithImage[i][namelanguage]}</h3>
+    <h3 class="lightbox-price">${itemsWithImage[i].price}</h3>
+    <p class="lightbox-description">${itemsWithImage[i][deslanguage]}</p>
+  `;
 
-  const textContent = document.createElement('div');
-  textContent.classList.add('text-content');
-  lightbox.appendChild(textContent);
-
-  const lbContent = document.createElement('div');
-  lbContent.classList.add('lightbox-content');
-  lightbox.appendChild(lbContent);
-  lbContent.style.backgroundImage = `url("../${item.img}")`;
-
-
-  const lightboxName = document.createElement('h3');
-  lightboxName.classList.add('lightbox-name');
-  lightboxName.textContent = item.name;
-  textContent.appendChild(lightboxName);
-
-  const lightboxPrice = document.createElement('h3');
-  lightboxPrice.classList.add('lightbox-price');
-  lightboxPrice.textContent = item.price;
-  textContent.appendChild(lightboxPrice);
-
-  const lightboxDescription = document.createElement('p');
-  lightboxDescription.classList.add('lightbox-description');
-  lightboxDescription.textContent = item.description;
-  textContent.appendChild(lightboxDescription);
-
+  lightbox.style.backgroundImage = `url("../${itemsWithImage[i].img}")`;
   lightbox.style.display = "block";
-})
+}
+
+
+  const enLang = document.getElementById('enLang');
+  enLang.addEventListener('click', () => {
+    localStorage.setItem('languagePreference', 'en'); // Store language preference in localStorage
+    namelanguage = 'enname';
+    deslanguage = 'endescription';
+    languageSwitch(data);
+  })
+
+
+  const viLang = document.getElementById('viLang');
+  viLang.addEventListener('click', () => {
+    localStorage.setItem('languagePreference', 'vi'); // Store language preference in localStorage
+    namelanguage = 'viname';
+    deslanguage = 'videscription';
+    languageSwitch(data);
+  })
+
+
 
 };
-
 getData();
+
+
+function getLanguagePreference() {
+  return localStorage.getItem('languagePreference') || 'vi'; // Default to English if no preference is stored
+}
+
+
+
+function languageSwitch(data) {
+
+  var catItems = data[typeName];
+  const itemsWithImage = catItems.filter(object => object.img);
+
+  const names = document.querySelectorAll('.name');
+  const lightboxNames = document.querySelectorAll('.lightbox-name');
+  const lightboxDes = document.querySelectorAll('.lightbox-description');
+
+
+  for(var i=0; i < catItems.length; i++) {
+    names[i].textContent = catItems[i][namelanguage];
+}
+  for(var i=0; i < itemsWithImage.length; i++) {
+    lightboxNames[i].textContent = itemsWithImage[i][namelanguage];
+    lightboxDes[i].textContent = itemsWithImage[i][deslanguage];
+
+  }
+
+}
+

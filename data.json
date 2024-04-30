@@ -1,98 +1,110 @@
 {
-    "Classic Coffee": [
-      {
-        "name": "Espresso",
-        "price": 175,
-        "description": "Cà phê arabica, nước xoài, sốt caramen gừng, rau răm, muối tôm",
-        "eng": "Espresso",
-        "img": "assets/EGG COFFEE MARTINI.jpg"
-      },
-      {
-        "name": "Americano",
-        "price": 180,
-        "description": "",
-        "eng": "Americano",
-        "img": ""
-      },
-      {
-        "name": "Latte",
-        "price": 180,
-        "description": "",
-        "eng": "",
-        "img": ""
-      },
-      {
-        "name": "Cappuccino",
-        "price": 180,
-        "description": "",
-        "eng": "Cappuccino",
-        "img": ""
-      },
-      {
-        "name": "Oatside Latte",
-        "price": 190,
-        "description": "",
-        "eng": "Oatside Latte",
-        "img": ""
-      },
-      {
-        "name": "Original Cold Brew",
-        "price": 175,
-        "description": "",
-        "eng": "Original Cold Brew",
-        "img": ""
-      },
-      {
-        "name": "Cà Phê Đen",
-        "price": 175,
-        "description": "",
-        "eng": "Cà Phê Đen",
-        "img": ""
-      },
-      {
-        "name": "Cà Phê Sữa",
-        "price": 180,
-        "description": "",
-        "eng": "Cà Phê Đen",
-        "img": ""
-      }
-    ],
-    "Signature Coffee": [
-      {
-        "name": "Tamarind cold brew",
-        "price": 185,
-        "description": "",
-        "eng": "",
-        "img": "assets/EGG COFFEE MARTINI.jpg"
-      },
-      {
-        "name": "Tamarind cold brew",
-        "price": 185,
-        "description": "",
-        "eng": "",
-        "img": "assets/EGG COFFEE MARTINI.jpg"
-      },
-      {
-        "name": "Tamarind cold brew",
-        "price": 185,
-        "description": "",
-        "eng": "",
-        "img": "assets/EGG COFFEE MARTINI.jpg"
-      },
-      {
-        "name": "Tamarind cold brew",
-        "price": 185,
-        "description": "",
-        "eng": "",
-        "img": "assets/EGG COFFEE MARTINI.jpg"
-      },
-      {
-        "name": "Tamarind cold brew",
-        "price": 185,
-        "description": "",
-        "eng": "",
-        "img": "assets/EGG COFFEE MARTINI.jpg"
-      }
-    ]
-  }
-  
+  "Classic Coffee": [
+    {
+      "viname": "Espresso",
+      "enname": "Espresso",
+      "price": 175,
+      "videscription": "",
+      "endescription": "",
+      "img": "assets/EGG COFFEE MARTINI.jpg"
+    },
+    {
+      "viname": "Espresso",
+      "enname": "Espresso",
+      "price": 175,
+      "videscription": "",
+      "endescription": "",
+      "img": ""
+    },
+    {
+      "viname": "Espresso",
+      "enname": "Espresso",
+      "price": 175,
+      "videscription": "",
+      "endescription": "",
+      "img": ""
+    },
+    {
+      "viname": "Espresso",
+      "enname": "Espresso",
+      "price": 175,
+      "videscription": "",
+      "endescription": "",
+      "img": ""
+    },
+    {
+      "viname": "Espresso",
+      "enname": "Espresso",
+      "price": 175,
+      "videscription": "",
+      "endescription": "",
+      "img": ""
+    },
+    {
+      "viname": "Espresso",
+      "enname": "Espresso",
+      "price": 175,
+      "videscription": "",
+      "endescription": "",
+      "img": ""
+    },
+    {
+      "viname": "Espresso",
+      "enname": "Espresso",
+      "price": 175,
+      "videscription": "",
+      "endescription": "",
+      "img": ""
+    },
+    {
+      "viname": "Espresso",
+      "enname": "Espresso",
+      "price": 175,
+      "videscription": "",
+      "endescription": "",
+      "img": ""
+    }
+  ],
+  "Signature Coffee": [
+    {
+      "viname": "Tamarind cold brew",
+      "enname": "Tamaind cold brew",
+      "price": 185,
+      "videscription": "",
+      "endescription": "",
+      "img": ""
+    },
+    {
+      "viname": "Jackfruit Latte",
+      "enname": " Latte",
+      "price": 180,
+      "videscription": "",
+      "endescription": "",
+      "img": ""
+    },
+    {
+      "viname": "Caramen Flan Coffee",
+      "enname": " Flan Coffee",
+      "price": 195,
+      "videscription": "Cà phê robusta, sốt flan caramen gừng, bánh flan",
+      "endescription": "Robusta shot, ginger caramel flan sauce, flan",
+      "img": "assets/CARAMEL FLAN COFFEE.jpg"
+    },
+    {
+      "viname": "Cheesy Popcorn Macchiato",
+      "enname": " Popcorn Macchiato",
+      "price": 195,
+      "videscription": "Cà phê arabica, sốt bắp rang bơ vị phô mai, sữa yến mạch Oatside, kem phô mai",
+      "endescription": "Arabica shot, cheese popcorn sauce, Oatside milk, cheese whipped cream",
+      "img": "assets/POPCORN MACCHIATO.jpg"
+    },
+    {
+      "viname": "Xoai Americano",
+      "enname": "Mango Americano",
+      "price": 175,
+      "videscription": "Cà phê arabica, nước xoài, sốt caramen gừng, rau răm, muối tôm",
+      "endescription": "Arabica shot, mango juice, caramel ginger, laksa cordial, shrimp salt",
+      "img": "assets/MANGO AMERICANO.jpg"
+    }
+  ]
+}

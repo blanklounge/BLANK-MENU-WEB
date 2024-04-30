@@ -14,7 +14,7 @@ async function getData() {
     data[typeName].forEach(item => {
       const divName = document.createElement('div');
       divName.classList.add('type-item', 'name');
-      divName.textContent = item.name;
+      divName.textContent = item.viname;
 
       const divPrice= document.createElement('div');
       divPrice.classList.add('type-item', 'price');
@@ -40,9 +40,9 @@ function populateLightboxContent(itemData) {
   const lbContent = document.querySelector('.lightbox-content');
 
   textContent.innerHTML = `
-    <h3 class="lightbox-name">${itemData.name}</h3>
+    <h3 class="lightbox-name">${itemData.viname}</h3>
     <h3 class="lightbox-price">${itemData.price}</h3>
-    <p class="lightbox-description">${itemData.description}</p>
+    <p class="lightbox-description">${itemData.videscription}</p>
   `;
 
   lbContent.style.backgroundImage = `url("${itemData.img}")`;
@@ -68,3 +68,21 @@ lightbox.addEventListener('click', function(event) {
 };
 
 getData();
+
+
+//LANGUAGE PREFERENCES
+
+
+const enLang = document.getElementById('enLang');
+enLang.addEventListener('click', () => {
+  localStorage.setItem('languagePreference', 'en'); // Store language preference in localStorage
+  console.log(getLanguagePreference());
+})
+
+
+function getLanguagePreference() {
+  return localStorage.getItem('languagePreference') || 'vi'; // Default to English if no preference is stored
+}
+
+
+console.log(getLanguagePreference());
